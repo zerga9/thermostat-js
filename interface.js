@@ -1,29 +1,43 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
-  $('#temperature').text(thermostat.temperature);
+  updateTemperature();
 
   $('#temperature-up').on('click', function() { // event listener
   thermostat.up(); // update model
-  $('#temperature').text(thermostat.temperature); // update view
+  updateTemperature(); // update view
 });
 
 $('#temperature-down').on('click', function() { // event listener
   thermostat.down(); // update model
-  $('#temperature').text(thermostat.temperature); // update view
+  updateTemperature(); // update view
 })
 
 $('#temperature-reset').on('click', function() { // event listener
   thermostat.resetTemperature(); // update model
-  $('#temperature').text(thermostat.temperature);
+  updateTemperature();
 });
 $('#powersaving-on').on('click', function() { // event listener
   thermostat.switchPowerSavingModeOn(); // update model
-  $('#temperature').text(thermostat.temperature);
   $('#power-saving-status').text('on')
+  updateTemperature();
 });
 $('#powersaving-off').on('click', function() { // event listener
   thermostat.switchPowerSavingModeOff(); // update model
-  $('#temperature').text(thermostat.temperature);
   $('#power-saving-status').text('off')
+  updateTemperature();
 });
+
+function updateTemperature() {
+  $('#temperature').text(thermostat.temperature);
+
+  if(thermostat.energyUsage() === 'low-usage') {
+    $('#temperature').css("color", "green")
+  }else if(thermostat.energyUsage() === 'medium-usage') {
+    $('#temperature').css("color", "purple") 
+
+    }else{
+      $("#temperature").css("color", "red")
+    }
+
+};
 });
