@@ -33,11 +33,15 @@ function updateTemperature() {
   if(thermostat.energyUsage() === 'low-usage') {
     $('#temperature').css("color", "green")
   }else if(thermostat.energyUsage() === 'medium-usage') {
-    $('#temperature').css("color", "purple") 
+    $('#temperature').css("color", "black")
 
     }else{
       $("#temperature").css("color", "red")
     }
 
 };
+
+$.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=19b8d89c9764def9aa48a6716ef909ce', function(data) {
+  $('#current-temperature').text(data.main.temp);
+})
 });
