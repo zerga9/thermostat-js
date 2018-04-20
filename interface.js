@@ -29,15 +29,7 @@ $('#powersaving-off').on('click', function() { // event listener
 
 function updateTemperature() {
   $('#temperature').text(thermostat.temperature);
-
-  if(thermostat.energyUsage() === 'low-usage') {
-    $('#temperature').css("color", "green")
-  }else if(thermostat.energyUsage() === 'medium-usage') {
-    $('#temperature').css("color", "black")
-
-    }else{
-      $("#temperature").css("color", "red")
-    }
+  $('#temperature').attr('class', thermostat.energyUsage());
 
     };
 
