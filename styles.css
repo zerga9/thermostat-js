@@ -9,3 +9,30 @@
 .high-usage {
   color: red;
 }
+
+body {
+  background-color: yellow;
+  color: #e67300;
+  text-align: center;
+  font-family: 'Monaco', monospace;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36.3px;
+
+}
+/* .button {
+  background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+} */
+
+}
