@@ -2,7 +2,8 @@
 
 Build the logic needed to model a simple thermostat.
 
-Specifications:
+#### Specifications:
+
 * Thermostat starts at 20 degrees
 * You can increase the temperature with an up function
 * You can decrease the temperature with a down function
@@ -17,3 +18,12 @@ Specifications:
 ![image](https://user-images.githubusercontent.com/33194929/41226363-2e802bec-6d69-11e8-91b6-5a94439ba057.png)
 
 Run ```ruby server.rb``` and go to ```localhost:4567``` in your browser.
+
+#### Technologies:
+
+* Jquery
+* Sinatra
+* HTML
+* JavaScript
+* CSS
+* Ajax 
