@@ -49,6 +49,12 @@ function updateTemperature() {
       $('#chosen-city').text(city);
       displayWeather(city);
   });
+function displayTime() {
+  response = $.get("http://localhost:4567")
+  $.get(response, function(response) {
+    $('#time').text(response);
 
+})
+}
 
-    });
+});
