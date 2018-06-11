@@ -17,6 +17,9 @@ Build the logic needed to model a simple thermostat.
 
 ![image](https://user-images.githubusercontent.com/33194929/41226363-2e802bec-6d69-11e8-91b6-5a94439ba057.png)
 
+#### How to use
+
+Clone this repository
 Run ```ruby server.rb``` and go to ```localhost:4567``` in your browser.
 
 #### Technologies:
@@ -26,4 +29,10 @@ Run ```ruby server.rb``` and go to ```localhost:4567``` in your browser.
 * HTML
 * JavaScript
 * CSS
-* Ajax 
+* Ajax
+
+#### Testing:
+
+* Jasmine
+
+Open the SpecRunner.html file in your browser to see the tests
