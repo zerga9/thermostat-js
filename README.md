@@ -2,37 +2,80 @@
 
 Build the logic needed to model a simple thermostat.
 
-#### Specifications:
+#### User stories:
 
-* Thermostat starts at 20 degrees
-* You can increase the temperature with an up function
-* You can decrease the temperature with a down function
-* The minimum temperature is 10 degrees
-* If power saving mode is on, the maximum temperature is 25 degrees
-* If power saving mode is off, the maximum temperature is 32 degrees
-* Power saving mode is on by default
-* You can reset the temperature to 20 with a reset function
-* You can ask about the thermostat's current energy usage: < 18 is low-usage, <   25 is medium-usage, anything else is high-usage.
-* (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+```
+As a user
+So that I can set the temperature
+I want a thermostat that starts at 20 degrees
+```
+
+```
+As a user
+So that I can increase the temperature
+I want my thermostat to have an up button
+```
+
+```
+As a user
+So that I can decrease the temperature
+I want my thermostat to have a down button
+```
+
+```
+As a user
+So that I don't get too cold
+My thermostat should have a minimum temperature of 10 degrees
+```
+
+```
+As a user
+So that I can protect the environment
+My thermostat should have a power saving mode (PSM), which is on by default
+```
+
+```
+As a user
+So that I can regulate the temperature and my heating bills
+I want PSM to cap the temperature at 25 degrees when switched on
+```
+
+```
+As a user
+So that I can survive the cold winter months
+I want PSM to increase the maximum temperature to 32 degrees when switched off
+```
+
+```
+As a user
+So that I can reset the temperature
+I want a reset button that sets the temperature to 20 degrees
+```
+
+```
+As a user
+So I can monitor my energy usage
+I want the thermostat to tell me whether the current energy usage is low (<18 degrees), medium (18-25 degrees) or high (>25 degrees)
+```
 
 ![image](https://user-images.githubusercontent.com/33194929/41226363-2e802bec-6d69-11e8-91b6-5a94439ba057.png)
 
 #### How to use
 
 Clone this repository
-Run ```ruby server.rb``` and go to ```localhost:4567``` in your browser.
+Run `ruby server.rb` and go to `localhost:4567` in your browser.
 
 #### Technologies:
 
-* Jquery
-* Sinatra
-* HTML
-* JavaScript
-* CSS
-* Ajax
+- Jquery
+- Sinatra
+- HTML
+- JavaScript
+- CSS
+- Ajax
 
 #### Testing:
 
-* Jasmine
+- Jasmine
 
 Open the SpecRunner.html file in your browser to see the tests
