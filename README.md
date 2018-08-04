@@ -2,7 +2,7 @@
 
 Build the logic needed to model a simple thermostat.
 
-#### User stories:
+#### Fulfilled User stories:
 
 ```
 As a user
