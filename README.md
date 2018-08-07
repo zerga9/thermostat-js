@@ -58,17 +58,20 @@ So I can monitor my energy usage
 I want the thermostat to tell me whether the current energy usage is low (<18 degrees), medium (18-25 degrees) or high (>25 degrees)
 ```
 
-![image](https://user-images.githubusercontent.com/33194929/41226363-2e802bec-6d69-11e8-91b6-5a94439ba057.png)
+##### screenshot homepage
+
+![image](https://user-images.githubusercontent.com/33194929/43773924-37d8f77a-9a3f-11e8-8714-cf5f58288643.png)
 
 #### How to use
 
 Clone this repository
-Run `ruby server.rb` and go to `localhost:4567` in your browser.
+Run `npm install`, then `npm start` and go to `localhost:9000` in your browser to see the thermostat.
 
 #### Technologies:
 
 - Jquery
-- Sinatra
+- Express
+- Node.js
 - HTML
 - JavaScript
 - CSS
