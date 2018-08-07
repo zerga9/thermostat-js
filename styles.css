@@ -1,4 +1,4 @@
-  .low-usage {
+.low-usage {
   color: green;
 }
 
@@ -9,30 +9,34 @@
 .high-usage {
   color: red;
 }
-
 body {
-  background-color: yellow;
-  color: #e67300;
-  text-align: center;
-  font-family: 'Monaco', monospace;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 36.3px;
+  background: url("https://user-images.githubusercontent.com/33194929/43773657-57fd223e-9a3e-11e8-91e7-5ec42287edfb.png")
+    no-repeat center center fixed;
 
+  /* Center and scale the image nicely */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  repeat: no-repeat;
 }
-/* .button {
-  background-color: #4CAF50;
-    border: none;
-    border-radius: 50%;
-    color: white;
-    padding: 10px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-} */
 
+h1 {
+  text-align: center;
+  font-size: 800px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+form {
+  text-align: center;
+  font-size: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 10px;
 }
